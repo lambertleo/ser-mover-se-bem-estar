@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const Sobre = () => {
-  return (
-    <div className="site-wrapper">
+  return <div className="site-wrapper">
       {/* Header & Navigation */}
       <header>
         <div className="nav-container container">
@@ -42,14 +39,14 @@ const Sobre = () => {
       </header>
 
       {/* Page Header */}
-      <section className="page-header" style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1501854140801-50d01698950b")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white',
-        padding: '4rem 0',
-        textAlign: 'center'
-      }}>
+      <section className="page-header" style={{
+      backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1501854140801-50d01698950b")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      color: 'white',
+      padding: '4rem 0',
+      textAlign: 'center'
+    }}>
         <div className="container">
           <h1>Sobre o Programa SER</h1>
           <p>Conheça nossa missão, visão e valores</p>
@@ -71,13 +68,15 @@ const Sobre = () => {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="mvv-section" style={{ backgroundColor: 'var(--light-gray)' }}>
+      <section className="mvv-section" style={{
+      backgroundColor: 'var(--light-gray)'
+    }}>
         <div className="container">
-          <div className="mvv-grid" style={{ 
-            display: 'grid', 
-            gridTemplateColumns: '1fr',
-            gap: '2rem'
-          }}>
+          <div className="mvv-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '2rem'
+        }}>
             <div className="card">
               <div className="card-content">
                 <h3>Missão</h3>
@@ -93,7 +92,10 @@ const Sobre = () => {
             <div className="card">
               <div className="card-content">
                 <h3>Valores</h3>
-                <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
+                <ul style={{
+                listStyleType: 'disc',
+                paddingLeft: '1.5rem'
+              }}>
                   <li>Integralidade: compreensão do ser humano em suas múltiplas dimensões</li>
                   <li>Acolhimento: criação de espaços seguros e inclusivos</li>
                   <li>Autonomia: estímulo ao protagonismo e autocuidado</li>
@@ -113,36 +115,75 @@ const Sobre = () => {
             <h2>Nossos Objetivos</h2>
           </div>
           <div className="objectives-content">
-            <div className="objective-item" style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
-              <div style={{ marginRight: '1rem', fontSize: '2rem', color: 'var(--primary)' }}>1.</div>
+            <div className="objective-item" style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            marginBottom: '1.5rem'
+          }}>
+              <div style={{
+              marginRight: '1rem',
+              fontSize: '2rem',
+              color: 'var(--primary)'
+            }}>1.</div>
               <div>
                 <h3>Promover saúde mental</h3>
                 <p>Oferecer recursos e práticas que ajudem a comunidade universitária a lidar com o estresse, ansiedade e outros desafios emocionais, prevenindo adoecimento psíquico.</p>
               </div>
             </div>
-            <div className="objective-item" style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
-              <div style={{ marginRight: '1rem', fontSize: '2rem', color: 'var(--primary)' }}>2.</div>
+            <div className="objective-item" style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            marginBottom: '1.5rem'
+          }}>
+              <div style={{
+              marginRight: '1rem',
+              fontSize: '2rem',
+              color: 'var(--primary)'
+            }}>2.</div>
               <div>
                 <h3>Incentivar o movimento</h3>
                 <p>Estimular a prática regular de atividades físicas e corporais como ferramenta de promoção de saúde integral e redução do sedentarismo.</p>
               </div>
             </div>
-            <div className="objective-item" style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
-              <div style={{ marginRight: '1rem', fontSize: '2rem', color: 'var(--primary)' }}>3.</div>
+            <div className="objective-item" style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            marginBottom: '1.5rem'
+          }}>
+              <div style={{
+              marginRight: '1rem',
+              fontSize: '2rem',
+              color: 'var(--primary)'
+            }}>3.</div>
               <div>
                 <h3>Fortalecer vínculos</h3>
                 <p>Criar espaços de interação e conexão social que contribuam para o senso de pertencimento e redução da solidão no ambiente universitário.</p>
               </div>
             </div>
-            <div className="objective-item" style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
-              <div style={{ marginRight: '1rem', fontSize: '2rem', color: 'var(--primary)' }}>4.</div>
+            <div className="objective-item" style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            marginBottom: '1.5rem'
+          }}>
+              <div style={{
+              marginRight: '1rem',
+              fontSize: '2rem',
+              color: 'var(--primary)'
+            }}>4.</div>
               <div>
                 <h3>Desenvolver habilidades</h3>
                 <p>Capacitar os participantes com ferramentas práticas de autocuidado e autoconhecimento que possam ser integradas à rotina diária.</p>
               </div>
             </div>
-            <div className="objective-item" style={{ display: 'flex', alignItems: 'flex-start' }}>
-              <div style={{ marginRight: '1rem', fontSize: '2rem', color: 'var(--primary)' }}>5.</div>
+            <div className="objective-item" style={{
+            display: 'flex',
+            alignItems: 'flex-start'
+          }}>
+              <div style={{
+              marginRight: '1rem',
+              fontSize: '2rem',
+              color: 'var(--primary)'
+            }}>5.</div>
               <div>
                 <h3>Transformar a cultura</h3>
                 <p>Contribuir para uma cultura institucional que valorize o equilíbrio entre vida acadêmica e bem-estar pessoal, reconhecendo que ambos são complementares e não antagônicos.</p>
@@ -153,31 +194,52 @@ const Sobre = () => {
       </section>
 
       {/* Impact Section */}
-      <section className="impact-section" style={{ backgroundColor: 'var(--primary)', color: 'white' }}>
+      <section className="impact-section" style={{
+      backgroundColor: 'var(--primary)',
+      color: 'white'
+    }}>
         <div className="container">
           <div className="section-title">
-            <h2 style={{ color: 'white' }}>Nosso Impacto</h2>
+            <h2 style={{
+            color: 'white'
+          }}>Nosso Impacto</h2>
           </div>
-          <div className="impact-stats" style={{ 
-            display: 'grid', 
-            gridTemplateColumns: '1fr',
-            gap: '2rem',
-            textAlign: 'center'
-          }}>
+          <div className="impact-stats" style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '2rem',
+          textAlign: 'center'
+        }}>
             <div className="impact-item">
-              <div style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>+2000</div>
-              <p>Participantes desde 2020</p>
+              <div style={{
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              marginBottom: '0.5rem'
+            }}>+500</div>
+              <p>Participantes desde 2025</p>
             </div>
             <div className="impact-item">
-              <div style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>12</div>
+              <div style={{
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              marginBottom: '0.5rem'
+            }}>12</div>
               <p>Atividades oferecidas regularmente</p>
             </div>
             <div className="impact-item">
-              <div style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>85%</div>
+              <div style={{
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              marginBottom: '0.5rem'
+            }}>85%</div>
               <p>Relatam melhora no bem-estar geral</p>
             </div>
             <div className="impact-item">
-              <div style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>90%</div>
+              <div style={{
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              marginBottom: '0.5rem'
+            }}>90%</div>
               <p>Recomendam o programa para colegas</p>
             </div>
           </div>
@@ -233,8 +295,6 @@ const Sobre = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Sobre;
