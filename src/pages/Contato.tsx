@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const Contato = () => {
-  return (
-    <div className="site-wrapper">
+  return <div className="site-wrapper">
       {/* Header & Navigation */}
       <header>
         <div className="nav-container container">
@@ -42,14 +39,14 @@ const Contato = () => {
       </header>
 
       {/* Page Header */}
-      <section className="page-header" style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white',
-        padding: '4rem 0',
-        textAlign: 'center'
-      }}>
+      <section className="page-header" style={{
+      backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      color: 'white',
+      padding: '4rem 0',
+      textAlign: 'center'
+    }}>
         <div className="container">
           <h1>Contato</h1>
           <p>Estamos à disposição para atender você</p>
@@ -67,8 +64,8 @@ const Contato = () => {
             <div className="contact-card">
               <div className="contact-icon">📧</div>
               <h3>E-mail</h3>
-              <p>programaser@universidade.edu.br</p>
-              <p>moverse@universidade.edu.br</p>
+              <p>programaser@fae.edu.br</p>
+              <p>moverse@fae.edu.br</p>
             </div>
             <div className="contact-card">
               <div className="contact-icon">📱</div>
@@ -91,7 +88,7 @@ const Contato = () => {
               <div className="contact-icon">📍</div>
               <h3>Localização</h3>
               <p>Centro de Vivência, Sala 101</p>
-              <p>Campus Universitário</p>
+              <p>Campus FAE</p>
               <p>Segunda a Sexta, 8h às 18h</p>
             </div>
           </div>
@@ -99,7 +96,9 @@ const Contato = () => {
       </section>
 
       {/* Contact Form */}
-      <section style={{ backgroundColor: 'var(--light-gray)' }}>
+      <section style={{
+      backgroundColor: 'var(--light-gray)'
+    }}>
         <div className="container">
           <div className="section-title">
             <h2>Envie uma Mensagem</h2>
@@ -131,9 +130,14 @@ const Contato = () => {
                 <label htmlFor="mensagem">Mensagem*</label>
                 <textarea id="mensagem" name="mensagem" rows={6} required placeholder="Escreva sua mensagem aqui"></textarea>
               </div>
-              <div className="form-group" style={{ marginBottom: '2rem' }}>
+              <div className="form-group" style={{
+              marginBottom: '2rem'
+            }}>
                 <input type="checkbox" id="concordo" name="concordo" required />
-                <label htmlFor="concordo" style={{ display: 'inline', marginLeft: '0.5rem' }}>Concordo com o armazenamento e processamento das informações enviadas*</label>
+                <label htmlFor="concordo" style={{
+                display: 'inline',
+                marginLeft: '0.5rem'
+              }}>Concordo com o armazenamento e processamento das informações enviadas*</label>
               </div>
               <div className="form-submit">
                 <button type="submit" className="btn">Enviar Mensagem</button>
@@ -150,11 +154,11 @@ const Contato = () => {
             <h2>Perguntas Frequentes</h2>
             <p>Respostas para as dúvidas mais comuns</p>
           </div>
-          <div className="faq-grid" style={{ 
-            display: 'grid', 
-            gridTemplateColumns: '1fr',
-            gap: '1.5rem'
-          }}>
+          <div className="faq-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '1.5rem'
+        }}>
             <div className="faq-item">
               <h3>Preciso pagar para participar das atividades?</h3>
               <p>Não. Todas as atividades do Programa SER e do Projeto Mover-se são gratuitas para a comunidade universitária.</p>
@@ -180,8 +184,13 @@ const Contato = () => {
               <p>Não. Entendemos que os compromissos acadêmicos são prioridade. A participação é livre e você pode frequentar conforme sua disponibilidade.</p>
             </div>
           </div>
-          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <p>Não encontrou resposta para sua dúvida? <Link to="/contato" style={{ textDecoration: 'underline' }}>Entre em contato</Link> conosco.</p>
+          <div style={{
+          textAlign: 'center',
+          marginTop: '2rem'
+        }}>
+            <p>Não encontrou resposta para sua dúvida? <Link to="/contato" style={{
+              textDecoration: 'underline'
+            }}>Entre em contato</Link> conosco.</p>
           </div>
         </div>
       </section>
@@ -192,7 +201,7 @@ const Contato = () => {
           <div className="footer-content">
             <div className="footer-about">
               <div className="footer-logo">Programa <span>SER</span></div>
-              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2020.</p>
+              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2025.</p>
             </div>
             <div className="footer-links">
               <h3>Links Rápidos</h3>
@@ -226,8 +235,6 @@ const Contato = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Contato;
