@@ -1,11 +1,46 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Layout from '../components/Layout';
 
 const Index = () => {
   return (
-    <Layout>
+    <div className="site-wrapper">
+      {/* Header & Navigation */}
+      <header>
+        <div className="nav-container container">
+          <div className="logo">
+            Programa <span>SER</span>
+          </div>
+          <nav>
+            <ul className="nav-links">
+              <li><Link to="/" className="active">Início</Link></li>
+              <li><Link to="/sobre">Sobre</Link></li>
+              <li><Link to="/moverse">Mover-se</Link></li>
+              <li><Link to="/calendario">Calendário</Link></li>
+              <li><Link to="/depoimentos">Depoimentos</Link></li>
+              <li><Link to="/inscricao">Inscrição</Link></li>
+              <li><Link to="/contato">Contato</Link></li>
+            </ul>
+          </nav>
+          <button className="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="mobile-nav">
+          <button className="mobile-nav-close" aria-label="Fechar menu">✕</button>
+          <ul className="mobile-nav-links">
+            <li><Link to="/" className="active">Início</Link></li>
+            <li><Link to="/sobre">Sobre</Link></li>
+            <li><Link to="/moverse">Mover-se</Link></li>
+            <li><Link to="/calendario">Calendário</Link></li>
+            <li><Link to="/depoimentos">Depoimentos</Link></li>
+            <li><Link to="/inscricao">Inscrição</Link></li>
+            <li><Link to="/contato">Contato</Link></li>
+          </ul>
+        </div>
+        <div className="overlay"></div>
+      </header>
+
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
@@ -105,7 +140,48 @@ const Index = () => {
           <Link to="/inscricao" className="btn btn-secondary">Quero Participar</Link>
         </div>
       </section>
-    </Layout>
+
+      {/* Footer */}
+      <footer>
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-about">
+              <div className="footer-logo">Programa <span>SER</span></div>
+              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2020.</p>
+            </div>
+            <div className="footer-links">
+              <h3>Links Rápidos</h3>
+              <ul>
+                <li><Link to="/">Início</Link></li>
+                <li><Link to="/sobre">Sobre</Link></li>
+                <li><Link to="/moverse">Mover-se</Link></li>
+                <li><Link to="/calendario">Calendário</Link></li>
+                <li><Link to="/depoimentos">Depoimentos</Link></li>
+              </ul>
+            </div>
+            <div className="footer-contact">
+              <h3>Contato</h3>
+              <p>Email: programaser@universidade.edu.br</p>
+              <p>Instagram: @programaser</p>
+              <div className="social-icons">
+                <a href="#" className="social-icon" aria-label="Instagram">
+                  <span>📱</span>
+                </a>
+                <a href="#" className="social-icon" aria-label="Facebook">
+                  <span>📘</span>
+                </a>
+                <a href="#" className="social-icon" aria-label="Twitter">
+                  <span>🐦</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>&copy; 2025 Programa SER. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 };
 

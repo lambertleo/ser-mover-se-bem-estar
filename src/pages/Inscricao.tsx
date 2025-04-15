@@ -1,14 +1,49 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Layout from '../components/Layout';
 
 const Inscricao = () => {
   return (
-    <Layout>
+    <div className="site-wrapper">
+      {/* Header & Navigation */}
+      <header>
+        <div className="nav-container container">
+          <div className="logo">
+            Programa <span>SER</span>
+          </div>
+          <nav>
+            <ul className="nav-links">
+              <li><Link to="/">Início</Link></li>
+              <li><Link to="/sobre">Sobre</Link></li>
+              <li><Link to="/moverse">Mover-se</Link></li>
+              <li><Link to="/calendario">Calendário</Link></li>
+              <li><Link to="/depoimentos">Depoimentos</Link></li>
+              <li><Link to="/inscricao" className="active">Inscrição</Link></li>
+              <li><Link to="/contato">Contato</Link></li>
+            </ul>
+          </nav>
+          <button className="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="mobile-nav">
+          <button className="mobile-nav-close" aria-label="Fechar menu">✕</button>
+          <ul className="mobile-nav-links">
+            <li><Link to="/">Início</Link></li>
+            <li><Link to="/sobre">Sobre</Link></li>
+            <li><Link to="/moverse">Mover-se</Link></li>
+            <li><Link to="/calendario">Calendário</Link></li>
+            <li><Link to="/depoimentos">Depoimentos</Link></li>
+            <li><Link to="/inscricao" className="active">Inscrição</Link></li>
+            <li><Link to="/contato">Contato</Link></li>
+          </ul>
+        </div>
+        <div className="overlay"></div>
+      </header>
+
       {/* Page Header */}
       <section className="page-header" style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173")',
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: 'white',
@@ -17,36 +52,17 @@ const Inscricao = () => {
       }}>
         <div className="container">
           <h1>Inscrição</h1>
-          <p>Junte-se ao Programa SER e comece sua jornada de bem-estar</p>
-        </div>
-      </section>
-
-      {/* Registration Info */}
-      <section>
-        <div className="container">
-          <div className="section-title">
-            <h2>Como Participar</h2>
-            <p>Preencha o formulário abaixo para se inscrever nas atividades</p>
-          </div>
-          <div className="registration-info">
-            <div style={{ maxWidth: '800px', margin: '0 auto', backgroundColor: 'var(--light-gray)', padding: '2rem', borderRadius: '10px', marginBottom: '2rem' }}>
-              <h3 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>Informações Importantes</h3>
-              <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
-                <li>A participação nas atividades é <strong>gratuita</strong> para toda a comunidade universitária.</li>
-                <li>Você pode se inscrever em <strong>quantas atividades desejar</strong>, de acordo com sua disponibilidade.</li>
-                <li>As inscrições ficam <strong>permanentemente abertas</strong> durante todo o semestre letivo.</li>
-                <li>Para algumas atividades, pode haver <strong>limite de vagas</strong>. Nesse caso, haverá formação de lista de espera.</li>
-                <li>Não é necessário ter experiência prévia em nenhuma das atividades. Todas são <strong>adaptadas para iniciantes</strong>.</li>
-                <li>Em caso de dúvidas, entre em contato pelo email <strong>programaser@universidade.edu.br</strong>.</li>
-              </ul>
-            </div>
-          </div>
+          <p>Inicie sua jornada de bem-estar</p>
         </div>
       </section>
 
       {/* Registration Form */}
-      <section style={{ backgroundColor: 'var(--light-gray)' }}>
+      <section>
         <div className="container">
+          <div className="section-title">
+            <h2>Formulário de Inscrição</h2>
+            <p>Preencha os campos abaixo para participar do Programa SER</p>
+          </div>
           <div className="form-container">
             <form>
               <div className="form-group">
@@ -54,110 +70,264 @@ const Inscricao = () => {
                 <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
               </div>
               <div className="form-group">
-                <label htmlFor="email">E-mail Institucional*</label>
-                <input type="email" id="email" name="email" required placeholder="seu.email@universidade.edu.br" />
+                <label htmlFor="email">E-mail*</label>
+                <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com" />
               </div>
               <div className="form-group">
-                <label htmlFor="tel">Telefone</label>
-                <input type="tel" id="tel" name="telefone" placeholder="(00) 00000-0000" />
+                <label htmlFor="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
               </div>
               <div className="form-group">
                 <label htmlFor="vinculo">Vínculo com a Universidade*</label>
                 <select id="vinculo" name="vinculo" required>
                   <option value="">Selecione uma opção</option>
-                  <option value="estudante-grad">Estudante de Graduação</option>
+                  <option value="estudante-graduacao">Estudante de Graduação</option>
                   <option value="estudante-pos">Estudante de Pós-Graduação</option>
                   <option value="professor">Professor(a)</option>
                   <option value="tecnico">Técnico(a) Administrativo(a)</option>
-                  <option value="terceirizado">Funcionário(a) Terceirizado(a)</option>
                   <option value="outro">Outro</option>
                 </select>
               </div>
               <div className="form-group">
                 <label htmlFor="curso">Curso/Departamento</label>
-                <input type="text" id="curso" name="curso" placeholder="Seu curso ou departamento" />
+                <input type="text" id="curso" name="curso" placeholder="Se aplicável" />
               </div>
               <div className="form-group">
                 <label>Atividades de Interesse*</label>
                 <div style={{ marginTop: '0.5rem' }}>
                   <div style={{ marginBottom: '0.5rem' }}>
-                    <input type="checkbox" id="yoga" name="atividades" value="yoga" />
+                    <input type="checkbox" id="yoga" name="atividades[]" value="yoga" />
                     <label htmlFor="yoga" style={{ display: 'inline', marginLeft: '0.5rem' }}>Yoga</label>
                   </div>
                   <div style={{ marginBottom: '0.5rem' }}>
-                    <input type="checkbox" id="alongamento" name="atividades" value="alongamento" />
+                    <input type="checkbox" id="alongamento" name="atividades[]" value="alongamento" />
                     <label htmlFor="alongamento" style={{ display: 'inline', marginLeft: '0.5rem' }}>Alongamento</label>
                   </div>
                   <div style={{ marginBottom: '0.5rem' }}>
-                    <input type="checkbox" id="corrida" name="atividades" value="corrida" />
+                    <input type="checkbox" id="corrida" name="atividades[]" value="corrida" />
                     <label htmlFor="corrida" style={{ display: 'inline', marginLeft: '0.5rem' }}>Corrida</label>
                   </div>
                   <div style={{ marginBottom: '0.5rem' }}>
-                    <input type="checkbox" id="caminhada" name="atividades" value="caminhada" />
+                    <input type="checkbox" id="caminhada" name="atividades[]" value="caminhada" />
                     <label htmlFor="caminhada" style={{ display: 'inline', marginLeft: '0.5rem' }}>Caminhada</label>
                   </div>
                   <div style={{ marginBottom: '0.5rem' }}>
-                    <input type="checkbox" id="jogos" name="atividades" value="jogos" />
-                    <label htmlFor="jogos" style={{ display: 'inline', marginLeft: '0.5rem' }}>Jogos</label>
+                    <input type="checkbox" id="jogos" name="atividades[]" value="jogos" />
+                    <label htmlFor="jogos" style={{ display: 'inline', marginLeft: '0.5rem' }}>Jogos Coletivos</label>
                   </div>
                   <div style={{ marginBottom: '0.5rem' }}>
-                    <input type="checkbox" id="tabuleiro" name="atividades" value="tabuleiro" />
+                    <input type="checkbox" id="tabuleiro" name="atividades[]" value="tabuleiro" />
                     <label htmlFor="tabuleiro" style={{ display: 'inline', marginLeft: '0.5rem' }}>Jogos de Tabuleiro</label>
                   </div>
-                  <div style={{ marginBottom: '0.5rem' }}>
-                    <input type="checkbox" id="danca" name="atividades" value="danca" />
+                  <div>
+                    <input type="checkbox" id="danca" name="atividades[]" value="danca" />
                     <label htmlFor="danca" style={{ display: 'inline', marginLeft: '0.5rem' }}>Dança</label>
                   </div>
                 </div>
               </div>
               <div className="form-group">
                 <label htmlFor="disponibilidade">Disponibilidade de Horários</label>
-                <textarea id="disponibilidade" name="disponibilidade" rows={3} placeholder="Informe os dias e horários em que você tem disponibilidade"></textarea>
+                <select id="disponibilidade" name="disponibilidade">
+                  <option value="">Selecione uma opção</option>
+                  <option value="manha">Manhã (7h às 12h)</option>
+                  <option value="almoco">Horário de Almoço (12h às 14h)</option>
+                  <option value="tarde">Tarde (14h às 18h)</option>
+                  <option value="noite">Noite (18h às 21h)</option>
+                  <option value="flexivel">Flexível</option>
+                </select>
               </div>
               <div className="form-group">
-                <label htmlFor="motivos">Motivos para Participar</label>
-                <textarea id="motivos" name="motivos" rows={3} placeholder="Conte-nos por que você quer participar do Programa SER"></textarea>
+                <label htmlFor="expectativas">Expectativas e Objetivos</label>
+                <textarea id="expectativas" name="expectativas" rows={4} placeholder="Conte-nos o que você espera do programa e quais são seus objetivos de bem-estar"></textarea>
+              </div>
+              <div className="form-group">
+                <label htmlFor="como-soube">Como ficou sabendo do Programa SER?</label>
+                <select id="como-soube" name="como-soube">
+                  <option value="">Selecione uma opção</option>
+                  <option value="site">Site da Universidade</option>
+                  <option value="redes">Redes Sociais</option>
+                  <option value="email">E-mail Institucional</option>
+                  <option value="professor">Indicação de Professor</option>
+                  <option value="amigo">Indicação de Amigo</option>
+                  <option value="outro">Outro</option>
+                </select>
               </div>
               <div className="form-group" style={{ marginBottom: '2rem' }}>
                 <input type="checkbox" id="concordo" name="concordo" required />
-                <label htmlFor="concordo" style={{ display: 'inline', marginLeft: '0.5rem' }}>Concordo com a política de privacidade e com o uso dos meus dados para fins de participação no programa*</label>
+                <label htmlFor="concordo" style={{ display: 'inline', marginLeft: '0.5rem' }}>Concordo em receber comunicações sobre o Programa SER e suas atividades*</label>
               </div>
               <div className="form-submit">
                 <button type="submit" className="btn">Enviar Inscrição</button>
               </div>
             </form>
           </div>
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <p>*Campos obrigatórios</p>
+            <p>Dúvidas? Entre em <Link to="/contato" style={{ textDecoration: 'underline' }}>contato</Link> conosco.</p>
+          </div>
         </div>
       </section>
 
-      {/* Registration FAQ */}
-      <section>
+      {/* What to Expect */}
+      <section style={{ backgroundColor: 'var(--light-gray)' }}>
         <div className="container">
           <div className="section-title">
-            <h2>Perguntas Frequentes</h2>
-            <p>Dúvidas comuns sobre o processo de inscrição</p>
+            <h2>O que esperar após a inscrição</h2>
           </div>
-          <div className="faq-grid" style={{ 
+          <div className="steps-grid" style={{ 
             display: 'grid', 
             gridTemplateColumns: '1fr',
             gap: '1.5rem'
           }}>
-            <div className="faq-item">
-              <h3>Quando começo a participar após me inscrever?</h3>
-              <p>Após o envio do formulário, você receberá um e-mail de confirmação em até 48 horas com informações detalhadas sobre as atividades, incluindo locais e materiais necessários. Você já pode começar a participar na semana seguinte à sua inscrição.</p>
+            <div className="step-card" style={{ 
+              display: 'flex', 
+              alignItems: 'center',
+              backgroundColor: 'white',
+              borderRadius: '10px',
+              padding: '1.5rem',
+              boxShadow: 'var(--shadow)'
+            }}>
+              <div style={{ 
+                width: '50px', 
+                height: '50px', 
+                borderRadius: '50%', 
+                backgroundColor: 'var(--primary)', 
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontWeight: 'bold',
+                fontSize: '1.5rem',
+                marginRight: '1.5rem'
+              }}>1</div>
+              <div>
+                <h3>Confirmação</h3>
+                <p>Você receberá um e-mail de confirmação da sua inscrição em até 24 horas.</p>
+              </div>
             </div>
-            <div className="faq-item">
-              <h3>Posso cancelar ou alterar minha inscrição?</h3>
-              <p>Sim! Você pode alterar sua inscrição a qualquer momento, adicionando ou removendo atividades. Basta enviar um e-mail para programaser@universidade.edu.br informando as alterações desejadas.</p>
+            <div className="step-card" style={{ 
+              display: 'flex', 
+              alignItems: 'center',
+              backgroundColor: 'white',
+              borderRadius: '10px',
+              padding: '1.5rem',
+              boxShadow: 'var(--shadow)'
+            }}>
+              <div style={{ 
+                width: '50px', 
+                height: '50px', 
+                borderRadius: '50%', 
+                backgroundColor: 'var(--primary)', 
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontWeight: 'bold',
+                fontSize: '1.5rem',
+                marginRight: '1.5rem'
+              }}>2</div>
+              <div>
+                <h3>Boas-vindas</h3>
+                <p>Nossa equipe entrará em contato para dar as boas-vindas e fornecer informações detalhadas sobre as atividades escolhidas.</p>
+              </div>
             </div>
-            <div className="faq-item">
-              <h3>Preciso me inscrever novamente a cada semestre?</h3>
-              <p>Sim. Para garantir a organização das turmas e a qualidade das atividades, as inscrições são renovadas a cada início de semestre. Você receberá um aviso por e-mail quando o período de renovação estiver aberto.</p>
+            <div className="step-card" style={{ 
+              display: 'flex', 
+              alignItems: 'center',
+              backgroundColor: 'white',
+              borderRadius: '10px',
+              padding: '1.5rem',
+              boxShadow: 'var(--shadow)'
+            }}>
+              <div style={{ 
+                width: '50px', 
+                height: '50px', 
+                borderRadius: '50%', 
+                backgroundColor: 'var(--primary)', 
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontWeight: 'bold',
+                fontSize: '1.5rem',
+                marginRight: '1.5rem'
+              }}>3</div>
+              <div>
+                <h3>Participação</h3>
+                <p>Você poderá começar a participar das atividades conforme o calendário regular ou eventos especiais.</p>
+              </div>
+            </div>
+            <div className="step-card" style={{ 
+              display: 'flex', 
+              alignItems: 'center',
+              backgroundColor: 'white',
+              borderRadius: '10px',
+              padding: '1.5rem',
+              boxShadow: 'var(--shadow)'
+            }}>
+              <div style={{ 
+                width: '50px', 
+                height: '50px', 
+                borderRadius: '50%', 
+                backgroundColor: 'var(--primary)', 
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontWeight: 'bold',
+                fontSize: '1.5rem',
+                marginRight: '1.5rem'
+              }}>4</div>
+              <div>
+                <h3>Acompanhamento</h3>
+                <p>Periodicamente, solicitaremos feedback sobre sua experiência para garantir que estamos atendendo suas expectativas.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </Layout>
+
+      {/* Footer */}
+      <footer>
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-about">
+              <div className="footer-logo">Programa <span>SER</span></div>
+              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2020.</p>
+            </div>
+            <div className="footer-links">
+              <h3>Links Rápidos</h3>
+              <ul>
+                <li><Link to="/">Início</Link></li>
+                <li><Link to="/sobre">Sobre</Link></li>
+                <li><Link to="/moverse">Mover-se</Link></li>
+                <li><Link to="/calendario">Calendário</Link></li>
+                <li><Link to="/depoimentos">Depoimentos</Link></li>
+              </ul>
+            </div>
+            <div className="footer-contact">
+              <h3>Contato</h3>
+              <p>Email: programaser@universidade.edu.br</p>
+              <p>Instagram: @programaser</p>
+              <div className="social-icons">
+                <a href="#" className="social-icon" aria-label="Instagram">
+                  <span>📱</span>
+                </a>
+                <a href="#" className="social-icon" aria-label="Facebook">
+                  <span>📘</span>
+                </a>
+                <a href="#" className="social-icon" aria-label="Twitter">
+                  <span>🐦</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>&copy; 2025 Programa SER. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 };
 
