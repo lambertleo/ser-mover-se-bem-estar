@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const Calendario = () => {
-  return (
-    <div className="site-wrapper">
+  return <div className="site-wrapper">
       {/* Header & Navigation */}
       <header>
         <div className="nav-container container">
@@ -42,14 +39,14 @@ const Calendario = () => {
       </header>
 
       {/* Page Header */}
-      <section className="page-header" style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white',
-        padding: '4rem 0',
-        textAlign: 'center'
-      }}>
+      <section className="page-header" style={{
+      backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      color: 'white',
+      padding: '4rem 0',
+      textAlign: 'center'
+    }}>
         <div className="container">
           <h1>Calendário de Atividades</h1>
           <p>Acompanhe nossa programação e não perca nenhuma atividade</p>
@@ -121,7 +118,9 @@ const Calendario = () => {
       </section>
 
       {/* Upcoming Events */}
-      <section style={{ backgroundColor: 'var(--light-gray)' }}>
+      <section style={{
+      backgroundColor: 'var(--light-gray)'
+    }}>
         <div className="container">
           <div className="section-title">
             <h2>Próximos Eventos</h2>
@@ -169,83 +168,196 @@ const Calendario = () => {
             <p>Confira nossa programação fixa</p>
           </div>
           <div className="weekly-activities">
-            <div className="weekly-day" style={{ marginBottom: '2rem' }}>
-              <h3 style={{ backgroundColor: 'var(--primary)', color: 'white', padding: '0.5rem', borderRadius: '5px' }}>Segunda-feira</h3>
-              <div className="weekly-events" style={{ marginTop: '1rem' }}>
-                <div className="weekly-event" style={{ marginBottom: '1rem', padding: '0.5rem 0', borderBottom: '1px solid var(--light-gray)' }}>
-                  <div style={{ fontWeight: 'bold' }}>07:30 - 08:30</div>
+            <div className="weekly-day" style={{
+            marginBottom: '2rem'
+          }}>
+              <h3 style={{
+              backgroundColor: 'var(--primary)',
+              color: 'white',
+              padding: '0.5rem',
+              borderRadius: '5px'
+            }}>Segunda-feira</h3>
+              <div className="weekly-events" style={{
+              marginTop: '1rem'
+            }}>
+                <div className="weekly-event" style={{
+                marginBottom: '1rem',
+                padding: '0.5rem 0',
+                borderBottom: '1px solid var(--light-gray)'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>07:30 - 08:30</div>
                   <div>Yoga - Sala Multiuso</div>
                 </div>
-                <div className="weekly-event" style={{ marginBottom: '1rem', padding: '0.5rem 0', borderBottom: '1px solid var(--light-gray)' }}>
-                  <div style={{ fontWeight: 'bold' }}>12:30 - 13:30</div>
+                <div className="weekly-event" style={{
+                marginBottom: '1rem',
+                padding: '0.5rem 0',
+                borderBottom: '1px solid var(--light-gray)'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>12:30 - 13:30</div>
                   <div>Alongamento - Gramado Central</div>
                 </div>
-                <div className="weekly-event" style={{ padding: '0.5rem 0' }}>
-                  <div style={{ fontWeight: 'bold' }}>17:30 - 19:00</div>
+                <div className="weekly-event" style={{
+                padding: '0.5rem 0'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>17:30 - 19:00</div>
                   <div>Corrida - Pista de Atletismo</div>
                 </div>
               </div>
             </div>
             
-            <div className="weekly-day" style={{ marginBottom: '2rem' }}>
-              <h3 style={{ backgroundColor: 'var(--primary)', color: 'white', padding: '0.5rem', borderRadius: '5px' }}>Terça-feira</h3>
-              <div className="weekly-events" style={{ marginTop: '1rem' }}>
-                <div className="weekly-event" style={{ marginBottom: '1rem', padding: '0.5rem 0', borderBottom: '1px solid var(--light-gray)' }}>
-                  <div style={{ fontWeight: 'bold' }}>08:00 - 09:30</div>
+            <div className="weekly-day" style={{
+            marginBottom: '2rem'
+          }}>
+              <h3 style={{
+              backgroundColor: 'var(--primary)',
+              color: 'white',
+              padding: '0.5rem',
+              borderRadius: '5px'
+            }}>Terça-feira</h3>
+              <div className="weekly-events" style={{
+              marginTop: '1rem'
+            }}>
+                <div className="weekly-event" style={{
+                marginBottom: '1rem',
+                padding: '0.5rem 0',
+                borderBottom: '1px solid var(--light-gray)'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>08:00 - 09:30</div>
                   <div>Caminhada - Entrada do Bosque</div>
                 </div>
-                <div className="weekly-event" style={{ padding: '0.5rem 0' }}>
-                  <div style={{ fontWeight: 'bold' }}>18:00 - 20:00</div>
+                <div className="weekly-event" style={{
+                padding: '0.5rem 0'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>18:00 - 20:00</div>
                   <div>Jogos de Tabuleiro - Centro de Convivência</div>
                 </div>
               </div>
             </div>
             
-            <div className="weekly-day" style={{ marginBottom: '2rem' }}>
-              <h3 style={{ backgroundColor: 'var(--primary)', color: 'white', padding: '0.5rem', borderRadius: '5px' }}>Quarta-feira</h3>
-              <div className="weekly-events" style={{ marginTop: '1rem' }}>
-                <div className="weekly-event" style={{ marginBottom: '1rem', padding: '0.5rem 0', borderBottom: '1px solid var(--light-gray)' }}>
-                  <div style={{ fontWeight: 'bold' }}>07:30 - 08:30</div>
+            <div className="weekly-day" style={{
+            marginBottom: '2rem'
+          }}>
+              <h3 style={{
+              backgroundColor: 'var(--primary)',
+              color: 'white',
+              padding: '0.5rem',
+              borderRadius: '5px'
+            }}>Quarta-feira</h3>
+              <div className="weekly-events" style={{
+              marginTop: '1rem'
+            }}>
+                <div className="weekly-event" style={{
+                marginBottom: '1rem',
+                padding: '0.5rem 0',
+                borderBottom: '1px solid var(--light-gray)'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>07:30 - 08:30</div>
                   <div>Yoga - Sala Multiuso</div>
                 </div>
-                <div className="weekly-event" style={{ marginBottom: '1rem', padding: '0.5rem 0', borderBottom: '1px solid var(--light-gray)' }}>
-                  <div style={{ fontWeight: 'bold' }}>12:30 - 13:30</div>
+                <div className="weekly-event" style={{
+                marginBottom: '1rem',
+                padding: '0.5rem 0',
+                borderBottom: '1px solid var(--light-gray)'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>12:30 - 13:30</div>
                   <div>Dança - Sala Multiuso</div>
                 </div>
-                <div className="weekly-event" style={{ padding: '0.5rem 0' }}>
-                  <div style={{ fontWeight: 'bold' }}>17:30 - 19:00</div>
+                <div className="weekly-event" style={{
+                padding: '0.5rem 0'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>17:30 - 19:00</div>
                   <div>Jogos Coletivos - Quadra Poliesportiva</div>
                 </div>
               </div>
             </div>
             
-            <div className="weekly-day" style={{ marginBottom: '2rem' }}>
-              <h3 style={{ backgroundColor: 'var(--primary)', color: 'white', padding: '0.5rem', borderRadius: '5px' }}>Quinta-feira</h3>
-              <div className="weekly-events" style={{ marginTop: '1rem' }}>
-                <div className="weekly-event" style={{ marginBottom: '1rem', padding: '0.5rem 0', borderBottom: '1px solid var(--light-gray)' }}>
-                  <div style={{ fontWeight: 'bold' }}>08:00 - 09:30</div>
+            <div className="weekly-day" style={{
+            marginBottom: '2rem'
+          }}>
+              <h3 style={{
+              backgroundColor: 'var(--primary)',
+              color: 'white',
+              padding: '0.5rem',
+              borderRadius: '5px'
+            }}>Quinta-feira</h3>
+              <div className="weekly-events" style={{
+              marginTop: '1rem'
+            }}>
+                <div className="weekly-event" style={{
+                marginBottom: '1rem',
+                padding: '0.5rem 0',
+                borderBottom: '1px solid var(--light-gray)'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>08:00 - 09:30</div>
                   <div>Caminhada - Entrada do Bosque</div>
                 </div>
-                <div className="weekly-event" style={{ padding: '0.5rem 0' }}>
-                  <div style={{ fontWeight: 'bold' }}>17:30 - 19:00</div>
+                <div className="weekly-event" style={{
+                padding: '0.5rem 0'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>17:30 - 19:00</div>
                   <div>Corrida - Pista de Atletismo</div>
                 </div>
               </div>
             </div>
             
-            <div className="weekly-day" style={{ marginBottom: '2rem' }}>
-              <h3 style={{ backgroundColor: 'var(--primary)', color: 'white', padding: '0.5rem', borderRadius: '5px' }}>Sexta-feira</h3>
-              <div className="weekly-events" style={{ marginTop: '1rem' }}>
-                <div className="weekly-event" style={{ marginBottom: '1rem', padding: '0.5rem 0', borderBottom: '1px solid var(--light-gray)' }}>
-                  <div style={{ fontWeight: 'bold' }}>07:30 - 08:30</div>
+            <div className="weekly-day" style={{
+            marginBottom: '2rem'
+          }}>
+              <h3 style={{
+              backgroundColor: 'var(--primary)',
+              color: 'white',
+              padding: '0.5rem',
+              borderRadius: '5px'
+            }}>Sexta-feira</h3>
+              <div className="weekly-events" style={{
+              marginTop: '1rem'
+            }}>
+                <div className="weekly-event" style={{
+                marginBottom: '1rem',
+                padding: '0.5rem 0',
+                borderBottom: '1px solid var(--light-gray)'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>07:30 - 08:30</div>
                   <div>Yoga - Sala Multiuso</div>
                 </div>
-                <div className="weekly-event" style={{ marginBottom: '1rem', padding: '0.5rem 0', borderBottom: '1px solid var(--light-gray)' }}>
-                  <div style={{ fontWeight: 'bold' }}>12:30 - 13:30</div>
+                <div className="weekly-event" style={{
+                marginBottom: '1rem',
+                padding: '0.5rem 0',
+                borderBottom: '1px solid var(--light-gray)'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>12:30 - 13:30</div>
                   <div>Alongamento - Gramado Central</div>
                 </div>
-                <div className="weekly-event" style={{ padding: '0.5rem 0' }}>
-                  <div style={{ fontWeight: 'bold' }}>17:30 - 19:00</div>
+                <div className="weekly-event" style={{
+                padding: '0.5rem 0'
+              }}>
+                  <div style={{
+                  fontWeight: 'bold'
+                }}>17:30 - 19:00</div>
                   <div>Dança - Sala Multiuso</div>
                 </div>
               </div>
@@ -255,9 +367,14 @@ const Calendario = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="cta" style={{ backgroundColor: 'var(--primary)', color: 'white' }}>
+      <section className="cta" style={{
+      backgroundColor: 'var(--primary)',
+      color: 'white'
+    }}>
         <div className="container text-center">
-          <h2 style={{ color: 'white' }}>Encontre a atividade ideal para você</h2>
+          <h2 style={{
+          color: 'white'
+        }}>Encontre a atividade ideal para você</h2>
           <p>Inscreva-se e comece sua jornada de bem-estar agora mesmo</p>
           <Link to="/inscricao" className="btn btn-secondary">Quero Participar</Link>
         </div>
@@ -269,7 +386,7 @@ const Calendario = () => {
           <div className="footer-content">
             <div className="footer-about">
               <div className="footer-logo">Programa <span>SER</span></div>
-              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2020.</p>
+              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2025.</p>
             </div>
             <div className="footer-links">
               <h3>Links Rápidos</h3>
@@ -303,8 +420,6 @@ const Calendario = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Calendario;
