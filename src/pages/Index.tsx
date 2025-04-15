@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const Index = () => {
-  return (
-    <div className="site-wrapper">
+  return <div className="site-wrapper">
       {/* Header & Navigation */}
       <header>
         <div className="nav-container container">
@@ -69,7 +66,9 @@ const Index = () => {
       </section>
 
       {/* Activities Highlight */}
-      <section className="activities-highlight" style={{ backgroundColor: 'var(--light-gray)' }}>
+      <section className="activities-highlight" style={{
+      backgroundColor: 'var(--light-gray)'
+    }}>
         <div className="container">
           <div className="section-title">
             <h2>Projeto Mover-se</h2>
@@ -133,9 +132,14 @@ const Index = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="cta" style={{ backgroundColor: 'var(--primary)', color: 'white' }}>
+      <section className="cta" style={{
+      backgroundColor: 'var(--primary)',
+      color: 'white'
+    }}>
         <div className="container text-center">
-          <h2 style={{ color: 'white' }}>Faça parte dessa transformação</h2>
+          <h2 style={{
+          color: 'white'
+        }}>Faça parte dessa transformação</h2>
           <p>Inscreva-se hoje mesmo e comece sua jornada de bem-estar</p>
           <Link to="/inscricao" className="btn btn-secondary">Quero Participar</Link>
         </div>
@@ -161,7 +165,7 @@ const Index = () => {
             </div>
             <div className="footer-contact">
               <h3>Contato</h3>
-              <p>Email: programaser@universidade.edu.br</p>
+              <p>Email: leoeisa@fae.mail.edu</p>
               <p>Instagram: @programaser</p>
               <div className="social-icons">
                 <a href="#" className="social-icon" aria-label="Instagram">
@@ -177,12 +181,10 @@ const Index = () => {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 Programa SER. Todos os direitos reservados.</p>
+            <p>© 2025 Programa SER. Todos os direitos reservados. Criadores Leo Lamber e Isa Pozza</p>
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
