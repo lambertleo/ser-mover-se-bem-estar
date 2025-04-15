@@ -69,8 +69,12 @@ const Depoimentos = () => {
                 <div className="testimonial-content">
                   <p>"Participar do Projeto Mover-se mudou completamente minha experiência universitária. As práticas de yoga me ajudaram a lidar com a ansiedade durante as provas e aprendi a valorizar momentos de autocuidado. Agora consigo equilibrar melhor os estudos com atividades que promovem meu bem-estar."</p>
                   <div className="testimonial-author">
-                    <Avatar className="h-12 w-12">
-                      <AvatarImage src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="Ana Paula Silva" />
+                    <Avatar className="h-12 w-12 mr-4">
+                      <AvatarImage 
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" 
+                        alt="Ana Paula Silva" 
+                        className="object-cover rounded-full"
+                      />
                       <AvatarFallback>AP</AvatarFallback>
                     </Avatar>
                     <div>
@@ -86,8 +90,12 @@ const Depoimentos = () => {
                 <div className="testimonial-content">
                   <p>"Como professor, eu via muitos alunos sobrecarregados e com dificuldades para lidar com a pressão acadêmica. Desde que comecei a participar do Programa SER e incentivar meus alunos a fazer o mesmo, percebi uma melhora significativa no clima em sala de aula e no rendimento geral. É uma iniciativa que beneficia toda a comunidade."</p>
                   <div className="testimonial-author">
-                    <Avatar className="h-12 w-12">
-                      <AvatarImage src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" alt="Carlos Eduardo Mendes" />
+                    <Avatar className="h-12 w-12 mr-4">
+                      <AvatarImage 
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" 
+                        alt="Carlos Eduardo Mendes" 
+                        className="object-cover rounded-full"
+                      />
                       <AvatarFallback>CM</AvatarFallback>
                     </Avatar>
                     <div>
@@ -103,8 +111,12 @@ const Depoimentos = () => {
                 <div className="testimonial-content">
                   <p>"Entrei na universidade muito tímido e com dificuldade para fazer amigos. As atividades coletivas do Projeto Mover-se foram uma porta de entrada para conhecer pessoas com interesses similares aos meus. Nas corridas semanais, encontrei um grupo de apoio que vai além da atividade física. Formamos uma verdadeira comunidade."</p>
                   <div className="testimonial-author">
-                    <Avatar className="h-12 w-12">
-                      <AvatarImage src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6" alt="Matheus Oliveira" />
+                    <Avatar className="h-12 w-12 mr-4">
+                      <AvatarImage 
+                        src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6" 
+                        alt="Matheus Oliveira" 
+                        className="object-cover rounded-full"
+                      />
                       <AvatarFallback>MO</AvatarFallback>
                     </Avatar>
                     <div>
