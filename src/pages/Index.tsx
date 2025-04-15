@@ -151,7 +151,7 @@ const Index = () => {
           <div className="footer-content">
             <div className="footer-about">
               <div className="footer-logo">Programa <span>SER</span></div>
-              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2020.</p>
+              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2025.</p>
             </div>
             <div className="footer-links">
               <h3>Links Rápidos</h3>
