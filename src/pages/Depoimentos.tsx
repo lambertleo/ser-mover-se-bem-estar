@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const Depoimentos = () => {
-  return (
-    <div className="site-wrapper">
+  return <div className="site-wrapper">
       {/* Header & Navigation */}
       <header>
         <div className="nav-container container">
@@ -42,14 +39,14 @@ const Depoimentos = () => {
       </header>
 
       {/* Page Header */}
-      <section className="page-header" style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1518495973542-4542c06a5843")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white',
-        padding: '4rem 0',
-        textAlign: 'center'
-      }}>
+      <section className="page-header" style={{
+      backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1518495973542-4542c06a5843")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      color: 'white',
+      padding: '4rem 0',
+      textAlign: 'center'
+    }}>
         <div className="container">
           <h1>Depoimentos</h1>
           <p>Conheça as histórias e experiências dos nossos participantes</p>
@@ -113,13 +110,15 @@ const Depoimentos = () => {
       </section>
 
       {/* More Testimonials */}
-      <section style={{ backgroundColor: 'var(--light-gray)' }}>
+      <section style={{
+      backgroundColor: 'var(--light-gray)'
+    }}>
         <div className="container">
-          <div className="testimonials-grid" style={{ 
-            display: 'grid', 
-            gridTemplateColumns: '1fr',
-            gap: '2rem'
-          }}>
+          <div className="testimonials-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '2rem'
+        }}>
             <div className="testimonial-card">
               <div className="testimonial-content">
                 <p>"Desde que comecei a participar das aulas de dança do Programa SER, minha semana ganhou mais cor. É um momento em que posso esquecer das preocupações e simplesmente me divertir. Além do benefício físico, a dança melhorou minha autoconfiança e expressão corporal, o que acabou refletindo positivamente em apresentações acadêmicas."</p>
@@ -154,51 +153,66 @@ const Depoimentos = () => {
           <div className="section-title">
             <h2>Depoimentos em Vídeo</h2>
           </div>
-          <div className="video-testimonial" style={{ 
-            backgroundColor: 'var(--dark)',
-            borderRadius: '10px',
-            overflow: 'hidden',
-            position: 'relative',
-            paddingTop: '56.25%', /* 16:9 Aspect Ratio */
-            marginBottom: '2rem'
+          <div className="video-testimonial" style={{
+          backgroundColor: 'var(--dark)',
+          borderRadius: '10px',
+          overflow: 'hidden',
+          position: 'relative',
+          paddingTop: '56.25%',
+          /* 16:9 Aspect Ratio */
+          marginBottom: '2rem'
+        }}>
+            <div style={{
+            position: 'absolute',
+            top: '0',
+            left: '0',
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            color: 'white',
+            textAlign: 'center',
+            padding: '1rem'
           }}>
-            <div style={{ 
-              position: 'absolute',
-              top: '0',
-              left: '0',
-              width: '100%',
-              height: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              color: 'white',
-              textAlign: 'center',
-              padding: '1rem'
-            }}>
               <div>
-                <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>▶️</div>
+                <div style={{
+                fontSize: '3rem',
+                marginBottom: '1rem'
+              }}>▶️</div>
                 <h3>Depoimento em Vídeo</h3>
                 <p>Assista ao depoimento completo de nossos participantes</p>
               </div>
             </div>
           </div>
-          <div className="video-description" style={{ textAlign: 'center' }}>
+          <div className="video-description" style={{
+          textAlign: 'center'
+        }}>
             <p>Neste vídeo, participantes do Programa SER compartilham como as atividades impactaram positivamente suas vidas universitárias e pessoais.</p>
           </div>
         </div>
       </section>
 
       {/* Share Your Experience */}
-      <section style={{ backgroundColor: 'var(--primary)', color: 'white' }}>
+      <section style={{
+      backgroundColor: 'var(--primary)',
+      color: 'white'
+    }}>
         <div className="container">
           <div className="section-title">
-            <h2 style={{ color: 'white' }}>Compartilhe Sua Experiência</h2>
+            <h2 style={{
+            color: 'white'
+          }}>Compartilhe Sua Experiência</h2>
             <p>Conte-nos como o Programa SER impactou sua vida</p>
           </div>
-          <div className="share-experience" style={{ textAlign: 'center' }}>
+          <div className="share-experience" style={{
+          textAlign: 'center'
+        }}>
             <p>Você também participa do Programa SER ou do Projeto Mover-se? Gostaríamos de ouvir sua história!</p>
             <p>Envie seu depoimento para <strong>depoimentos@programaser.edu.br</strong> ou compartilhe nas redes sociais usando a hashtag <strong>#ProgramaSER</strong>.</p>
-            <div style={{ marginTop: '2rem' }}>
+            <div style={{
+            marginTop: '2rem'
+          }}>
               <Link to="/contato" className="btn btn-secondary">Enviar Depoimento</Link>
             </div>
           </div>
@@ -211,7 +225,7 @@ const Depoimentos = () => {
           <div className="footer-content">
             <div className="footer-about">
               <div className="footer-logo">Programa <span>SER</span></div>
-              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2020.</p>
+              <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2025.</p>
             </div>
             <div className="footer-links">
               <h3>Links Rápidos</h3>
@@ -245,8 +259,6 @@ const Depoimentos = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Depoimentos;
