@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Programa SER</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container container">
+            <div class="logo">
+                Programa <span>SER</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="moverse.html">Mover-se</a></li>
+                    <li><a href="calendario.html">Calendário</a></li>
+                    <li><a href="depoimentos.html">Depoimentos</a></li>
+                    <li><a href="inscricao.html" class="active">Inscrição</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <button class="mobile-nav-close" aria-label="Fechar menu">✕</button>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="moverse.html">Mover-se</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="inscricao.html" class="active">Inscrição</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    ">
+      <div class="container">
+        <h1>Inscrição</h1>
+        <p>Inicie sua jornada de bem-estar</p>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Formulário de Inscrição</h2>
+          <p>Preencha os campos abaixo para participar do Programa SER</p>
+        </div>
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome Completo*</label>
+              <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail*</label>
+              <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com" />
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+            </div>
+            <div class="form-group">
+              <label for="vinculo">Vínculo com a Universidade*</label>
+              <select id="vinculo" name="vinculo" required>
+                <option value="">Selecione uma opção</option>
+                <option value="estudante-graduacao">Estudante de Graduação</option>
+                <option value="estudante-pos">Estudante de Pós-Graduação</option>
+                <option value="professor">Professor(a)</option>
+                <option value="tecnico">Técnico(a) Administrativo(a)</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="curso">Curso/Departamento</label>
+              <input type="text" id="curso" name="curso" placeholder="Se aplicável" />
+            </div>
+            <div class="form-group">
+              <label>Atividades de Interesse*</label>
+              <div style="margin-top: 0.5rem;">
+                <div style="margin-bottom: 0.5rem;">
+                  <input type="checkbox" id="yoga" name="atividades[]" value="yoga" />
+                  <label for="yoga" style="display: inline; margin-left: 0.5rem;">Yoga</label>
+                </div>
+                <div style="margin-bottom: 0.5rem;">
+                  <input type="checkbox" id="alongamento" name="atividades[]" value="alongamento" />
+                  <label for="alongamento" style="display: inline; margin-left: 0.5rem;">Alongamento</label>
+                </div>
+                <div style="margin-bottom: 0.5rem;">
+                  <input type="checkbox" id="corrida" name="atividades[]" value="corrida" />
+                  <label for="corrida" style="display: inline; margin-left: 0.5rem;">Corrida</label>
+                </div>
+                <div style="margin-bottom: 0.5rem;">
+                  <input type="checkbox" id="caminhada" name="atividades[]" value="caminhada" />
+                  <label for="caminhada" style="display: inline; margin-left: 0.5rem;">Caminhada</label>
+                </div>
+                <div style="margin-bottom: 0.5rem;">
+                  <input type="checkbox" id="jogos" name="atividades[]" value="jogos" />
+                  <label for="jogos" style="display: inline; margin-left: 0.5rem;">Jogos Coletivos</label>
+                </div>
+                <div style="margin-bottom: 0.5rem;">
+                  <input type="checkbox" id="tabuleiro" name="atividades[]" value="tabuleiro" />
+                  <label for="tabuleiro" style="display: inline; margin-left: 0.5rem;">Jogos de Tabuleiro</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="danca" name="atividades[]" value="danca" />
+                  <label for="danca" style="display: inline; margin-left: 0.5rem;">Dança</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="disponibilidade">Disponibilidade de Horários</label>
+              <select id="disponibilidade" name="disponibilidade">
+                <option value="">Selecione uma opção</option>
+                <option value="manha">Manhã (7h às 12h)</option>
+                <option value="almoco">Horário de Almoço (12h às 14h)</option>
+                <option value="tarde">Tarde (14h às 18h)</option>
+                <option value="noite">Noite (18h às 21h)</option>
+                <option value="flexivel">Flexível</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="expectativas">Expectativas e Objetivos</label>
+              <textarea id="expectativas" name="expectativas" rows="4" placeholder="Conte-nos o que você espera do programa e quais são seus objetivos de bem-estar"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="como-soube">Como ficou sabendo do Programa SER?</label>
+              <select id="como-soube" name="como-soube">
+                <option value="">Selecione uma opção</option>
+                <option value="site">Site da Universidade</option>
+                <option value="redes">Redes Sociais</option>
+                <option value="email">E-mail Institucional</option>
+                <option value="professor">Indicação de Professor</option>
+                <option value="amigo">Indicação de Amigo</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 2rem;">
+              <input type="checkbox" id="concordo" name="concordo" required />
+              <label for="concordo" style="display: inline; margin-left: 0.5rem;">Concordo em receber comunicações sobre o Programa SER e suas atividades*</label>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn">Enviar Inscrição</button>
+            </div>
+          </form>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <p>*Campos obrigatórios</p>
+          <p>Dúvidas? Entre em <a href="contato.html" style="text-decoration: underline;">contato</a> conosco.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to Expect -->
+    <section style="background-color: var(--light-gray);">
+      <div class="container">
+        <div class="section-title">
+          <h2>O que esperar após a inscrição</h2>
+        </div>
+        <div class="steps-grid" style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+          <div class="step-card" style="display: flex; alignItems: center; backgroundColor: white; borderRadius: 10px; padding: 1.5rem; boxShadow: var(--shadow);">
+            <div style="width: 50px; height: 50px; borderRadius: 50%; backgroundColor: var(--primary); color: white; display: flex; alignItems: center; justifyContent: center; fontWeight: bold; fontSize: 1.5rem; marginRight: 1.5rem;">1</div>
+            <div>
+              <h3>Confirmação</h3>
+              <p>Você receberá um e-mail de confirmação da sua inscrição em até 24 horas.</p>
+            </div>
+          </div>
+          <div class="step-card" style="display: flex; alignItems: center; backgroundColor: white; borderRadius: 10px; padding: 1.5rem; boxShadow: var(--shadow);">
+            <div style="width: 50px; height: 50px; borderRadius: 50%; backgroundColor: var(--primary); color: white; display: flex; alignItems: center; justifyContent: center; fontWeight: bold; fontSize: 1.5rem; marginRight: 1.5rem;">2</div>
+            <div>
+              <h3>Boas-vindas</h3>
+              <p>Nossa equipe entrará em contato para dar as boas-vindas e fornecer informações detalhadas sobre as atividades escolhidas.</p>
+            </div>
+          </div>
+          <div class="step-card" style="display: flex; alignItems: center; backgroundColor: white; borderRadius: 10px; padding: 1.5rem; boxShadow: var(--shadow);">
+            <div style="width: 50px; height: 50px; borderRadius: 50%; backgroundColor: var(--primary); color: white; display: flex; alignItems: center; justifyContent: center; fontWeight: bold; fontSize: 1.5rem; marginRight: 1.5rem;">3</div>
+            <div>
+              <h3>Participação</h3>
+              <p>Você poderá começar a participar das atividades conforme o calendário regular ou eventos especiais.</p>
+            </div>
+          </div>
+          <div class="step-card" style="display: flex; alignItems: center; backgroundColor: white; borderRadius: 10px; padding: 1.5rem; boxShadow: var(--shadow);">
+            <div style="width: 50px; height: 50px; borderRadius: 50%; backgroundColor: var(--primary); color: white; display: flex; alignItems: center; justifyContent: center; fontWeight: bold; fontSize: 1.5rem; marginRight: 1.5rem;">4</div>
+            <div>
+              <h3>Acompanhamento</h3>
+              <p>Periodicamente, solicitaremos feedback sobre sua experiência para garantir que estamos atendendo suas expectativas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="footer-logo">Programa <span>SER</span></div>
+            <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2025.</p>
+          </div>
+          <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="moverse.html">Mover-se</a></li>
+              <li><a href="calendario.html">Calendário</a></li>
+              <li><a href="depoimentos.html">Depoimentos</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contato</h3>
+            <p>Email: programaser@universidade.edu.br</p>
+            <p>Instagram: @programaser</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <span>📱</span>
+              </a>
+              <a href="#" class="social-icon" aria-label="Facebook">
+                <span>📘</span>
+              </a>
+              <a href="#" class="social-icon" aria-label="Twitter">
+                <span>🐦</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Programa SER. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Programa SER</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container container">
+            <div class="logo">
+                Programa <span>SER</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="moverse.html">Mover-se</a></li>
+                    <li><a href="calendario.html">Calendário</a></li>
+                    <li><a href="depoimentos.html">Depoimentos</a></li>
+                    <li><a href="inscricao.html">Inscrição</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <button class="mobile-nav-close" aria-label="Fechar menu">✕</button>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="moverse.html">Mover-se</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="page-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516387938699-a93567ec168e')">
+        <div class="container">
+            <h1>Entre em Contato</h1>
+            <p>Estamos aqui para ajudar</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>programaser@universidade.edu.br</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>Redes Sociais</h3>
+                    <p>@programaser</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📱</a>
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">🐦</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Localização</h3>
+                    <p>Campus Universitário<br>Prédio Central, Sala 101</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo*</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto*</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem*</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Programa <span>SER</span></div>
+                    <p>Promovendo bem-estar e qualidade de vida para a comunidade universitária desde 2025.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="moverse.html">Mover-se</a></li>
+                        <li><a href="calendario.html">Calendário</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p>Email: programaser@universidade.edu.br</p>
+                    <p>Instagram: @programaser</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Instagram">📱</a>
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Programa SER. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
